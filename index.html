@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Bachaaa 🐱🖤</title>
+
+<style>
+body {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'Courier New';
+  text-align: center;
+}
+
+.page { display: none; padding: 40px; }
+.active { display: block; }
+
+button {
+  padding: 12px 18px;
+  margin: 10px;
+  border-radius: 25px;
+  border: none;
+  background: #ff4da6;
+  color: white;
+  cursor: pointer;
+}
+
+img {
+  width: 230px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #ff66cc;
+  text-shadow: 0 0 10px #ff66cc;
+}
+
+.fadeText {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(10px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+.glow {
+  text-shadow: 0 0 5px #fff, 0 0 12px #ff4da6;
+}
+
+.hidden { display:none; }
+</style>
+
+<script>
+let currentPage = 1;
+
+function nextPage(){
+  document.getElementById("page"+currentPage).classList.remove("active");
+  currentPage++;
+  document.getElementById("page"+currentPage).classList.add("active");
+}
+
+function popup(msg){
+  alert(msg);
+}
+
+function revealSecret(){
+  document.getElementById("secret").style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+<h1 class="fadeText glow">Happy Birthday Bachaaa 🐱🖤</h1>
+<img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHdoeDRhMDR3Yjk2NHJtZGJsYm0zY2d5a283ajdzZHAyZzR0eTR6ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vVegyymxA90fkY8jkE/giphy.gif">
+<p class="fadeText">
+aaj ka din us larkay ka ha jo  annoying bhi hai, over smart bhi samajhta ha khud ko,  
+lekin phir bhi pata nahi q itna important ha 😭💖  
+matlab honestly samajh nahi aata apko tolerate kaisay karti ho ma 😏  
+lekin phir bhi… aaj apka din ha to thora respect de dete ha 😌
+</p>
+<button onclick="nextPage()">start 😏</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+<h1 class="glow">🐱 Attention Please</h1>
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+<p class="fadeText">
+important announcement 📢  
+aaj ek aise insan ka birthday ha jo kabhi hero ban jata hai,  
+kabhi zero aur kabhi pura circus 🤡😭  
+apka mood swings weather se zyada unpredictable ha  
+or apki baatein kabhi kabhi itni ajeeb hoti ha k dimagh hang ho jata ha 💀  
+lekin phir bhi… ap ho to mazay k 😭💖
+</p>
+<button onclick="popup('haanjiii ap hi ha 😏')">Sach</button>
+<button onclick="nextPage()">Next 😂</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+<h1 class="glow">😂 Roast Mode ON</h1>
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+<p class="fadeText">
+agar stupidity ek talent hota na…  
+to ap world champion hotay 🏆😭  
+lekin tension nahi leni…  
+q ke isi wajah se ap entertaining bhi ho 😌  
+warna normal hotay to boring lagtay 💀  
+so basically… ap ganday ha lekin useful b ha 😂💖
+</p>
+<button onclick="nextPage()">Agay 😭</button>
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" class="page">
+<h1 class="glow">🐱 Cat ki trahhh</h1>
+<img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif">
+<p class="fadeText">
+ap bilkul cat jaisay ha…  
+kabhi cute… kabhi aggressive… kabhi ignore mode 😭  
+aur kabhi bas attitude hi attitude 😌  
+  lekin phir bhi jab baat hoti hai to hasi rukti nahi 💀💖
+</p>
+<button onclick="nextPage()">Next 😏</button>
+</div>
+
+<!-- PAGE 5 -->
+<div id="page5" class="page">
+<h1 class="glow">🤫 Secret Zone</h1>
+<img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+<p>agar himmat ha to secret kholein 👀</p>
+<button onclick="revealSecret()">click kijiye 😏</button>
+
+<div id="secret" class="hidden">
+<p class="fadeText glow">
+acha theek hai… sach batati ho 🥺  
+ap thoray nahi… kaafi cute ha MASHAALLAH 💖  
+lekin zyada overconfident mat ho jayiye 😏😂
+</p>
+</div>
+
+<button onclick="nextPage()">Next 😂</button>
+</div>
+
+<!-- PAGE 6 -->
+<div id="page6" class="page">
+<h1 class="glow">🤣 Emotional Damage</h1>
+<img src="https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif">
+<p class="fadeText">
+ap tang bohat kartay ha… seriously 😭  
+kabhi kabhi dil krta mouh toor duu 💀  
+lekin phir yaad aata ha ke  
+agar ap na ho to life boring ho jati ha 🥲  
+so unfortunately… ap zaroori ha 😌💖
+</p>
+<button onclick="nextPage()">Next 😌</button>
+</div>
+
+<!-- PAGE 7 -->
+<div id="page7" class="page">
+<h1 class="glow">🎁 Gift Scene</h1>
+<img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif">
+<p class="fadeText">
+gift dene ka plan tha 🎁  
+phir socha ap deserve nahi kartay 😭💀  
+phir socha thora sa kartay ha…  
+so yeh lein… meri dosti 😌💖  
+aur honestly is se better gift mil bhi nahi sakta henaa naa 😏😂
+</p>
+<button onclick="popup('accept kar liya na? 😏')">Accept Gift</button>
+<button onclick="nextPage()">Next 😂</button>
+</div>
+
+<!-- PAGE 8 -->
+<div id="page8" class="page">
+<h1 class="glow">🐱 Real Talk</h1>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3djdDdjMXh2bGtxZnY4ZGtzNTJ5bmVrY29yNWo1aHI0czkzMzc2MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/yFQ0ywscgobJK/giphy.gif">
+<p class="fadeText">
+mazak apni jagah…  
+lekin ap meri life ke sab se special logo m say ha 💖  
+jitna bhi pagalpan ha ap ma…  
+utna hi ap important bhi ha 😭  
+aur honestly… ap ho to life interesting ha 😌
+</p>
+<button onclick="nextPage()">🥺</button>
+</div>
+
+<!-- PAGE 9 -->
+<div id="page9" class="page">
+<h1 class="glow">💖 Emotional Scene</h1>
+<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+<p class="fadeText">
+hamesha aisay hi rehna meray bd b…  
+thoraY pagal… thoray funny… thoray annoying 😭  
+aur please kabhi change mat hona 💖  
+warna ma kisay tang karungi phir 💀😂
+</p>
+<button onclick="nextPage()">Last 😭</button>
+</div>
+
+<!-- PAGE 10 -->
+<div id="page10" class="page">
+<h1 class="glow">🎉 HAPPY BIRTHDAY 🖤🐱</h1>
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+<p class="fadeText">
+HAPPY BIRTHDAY BACHA 🖤  
+ap annoying hain… stupid hain… lekin favourite bhi ha 😭💖  
+Allah apko hamesha khush rakhe, success de  
+aur thora sa kam annoying bana de 😏😂  
+enjoy your dayyy 🎉🐱
+</p>
+<button onclick="popup('treat kab dein rahay ha 😏🔥')">FINAL CLICK</button>
+</div>
+
+</body>
+</html>
